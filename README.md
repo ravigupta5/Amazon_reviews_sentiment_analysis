@@ -22,9 +22,8 @@ The aim is to predict positive or negative sentiment of user towards the product
 -  review_date       - The date the review was written
   
 #### For the project, 'review_body' is the independent feature and 'star_rating' (converted to sentiment) is the target feature  
-#### Ratings 4 & 5 are considered as positive while the rest considered as negative
-  
-  
+#### Ratings 4 & 5 are considered as positive sentiment while the rest considered as negative sentiment
+
 ## Data preprocessing:
 - Tokenization, 
 - Encoding 
@@ -52,6 +51,14 @@ The aim is to predict positive or negative sentiment of user towards the product
 ## Training the model
 ![alt text](https://github.com/ravigupta5/Amazon_reviews_sentiment_analysis/blob/master/accuracy_curve.PNG?raw=true)
 
-## Sample Prediction
-Input: ('I got the phone last week, till now its working fine. The build quality is okay. Performance at par with best in the segment')
-Ouput: [[4.9882536]]
+## Sample Predictions
+(**Higher the prediction value, better the positive sentiment and vice-versa**)
+
+
+Input: ('I got the phone last week, till now its working fine. The build quality is okay. Performance at par with best in the segment')<br>
+Ouput: [[4.9882536]]<br>
+
+Input: ('not a good product')<br>
+Ouput: [[-2.009132]]<br>
+
+
